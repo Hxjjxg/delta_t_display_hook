@@ -1,0 +1,28 @@
+{
+  "name": "delta-t-display-hook",
+  "version": "1.0.0",
+  "description": "Frida IL2CPP hook for displaying delta-t (timing offset), accuracy, and judge counts in rhythm games",
+  "type": "module",
+  "scripts": {
+    "build": "frida-compile delta_t_display_bridge.ts -o dist/agent.js",
+    "watch": "frida-compile delta_t_display_bridge.ts -o dist/agent.js --watch",
+    "inject": "frida -l dist/agent.js --runtime qjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^18.8.2",
+    "frida-compile": "^19.0.5",
+    "frida-il2cpp-bridge": "^0.13.0"
+  },
+  "keywords": [
+    "frida",
+    "il2cpp",
+    "unity",
+    "rhythm-game",
+    "delta-t",
+    "hook"
+  ],
+  "license": "MIT"
+}

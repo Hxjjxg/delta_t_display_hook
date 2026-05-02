@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["es2022"],
+    "moduleResolution": "bundler",
+    "esModuleInterop": false,
+    "allowJs": true,
+    "strict": true,
+    "sourceMap": false,
+    "noEmit": true
+  },
+  "files": ["delta_t_display_bridge.ts"],
+  "exclude": ["dist", "node_modules"]
+}
