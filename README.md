@@ -1,11 +1,14 @@
 # delta-t-display-hook
 
-注意：除了这一段，下文均由 agent 编写，可能不准确。若你想参考本项目：
+若你想参考本项目：
 
 - 先准备 Frida 环境：root 后使用 `frida-server`，未 root 可使用 `frida-gadget`。
 - 本项目里的 RVA 是针对 3.14.2 写死的；你需要在 IDA 中为你的版本找到对应函数的 RVA 和逻辑，并在项目的基础上做一定程度的修改。
 - 最后注入js需要 `frida-compile`，下文有更清楚的说明。
 - 不保证按照`README.md`的指引，该项目能运行起来，只作学习参考用途。
+
+- 注意：除了这一段，下文均由 agent 编写，可能不准确。
+
 ##
 Frida IL2CPP hook script — 在音游中实时显示 delta-t（判定偏移）、准确率和各判定计数。
 
